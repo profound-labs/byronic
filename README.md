@@ -2,6 +2,8 @@
 Byronic Ebook Style
 ===================
 
+[profound-labs/byronic](https://github.com/profound-labs/byronic)
+
 A CSS style for Ebooks, based on the [ePub Zen Garden](http://epubzengarden.com/) structural elements, using [Source Sans Pro](http://www.fontsquirrel.com/fonts/source-sans-pro) and [Existence Light](http://www.fontsquirrel.com/fonts/Existence-Light).
 
 The [Byronic hero](http://en.wikipedia.org/wiki/Byronic_hero):
