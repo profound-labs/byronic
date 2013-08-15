@@ -1,0 +1,170 @@
+
+/* Byronic Ebook Style
+ *
+ * https://github.com/profound-labs/byronic
+ *
+ * Based on the ePub Zen Garden structure elements.
+ * http://epubzengarden.com/
+ *
+ * Released under the Creative Commons Attribution License.
+ * http://creativecommons.org/licenses/by/3.0/
+
+@import 'colors'
+@import 'font-source-sans-pro'
+@import 'font-existence'
+
+#content
+  font-family: 'SourceSansPro', 'Lucida Grande', 'DejaVu Sans', 'Bitstream Vera Sans', 'Tahoma', 'Palatino', 'Caecilia', sans-serif
+  font-weight: normal
+  line-height: 1.5em
+  padding: 22px
+  //vertical-align: baseline
+  //color: $textColor
+  //background-color: $textBgColor
+
+/* H1 is used only for the Book title (e.g. "Book I")
+/* H2 is used only for the Book subtitle (e.g. "Miss Brooke")
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+
+h1, h2
+  font-family: 'ExistenceLight'
+
+h3, h4, h5, h6
+  font-family: 'SourceSansPro', 'Lucida Grande', 'DejaVu Sans', 'Bitstream Vera Sans', 'Tahoma', 'Palatino', 'Caecilia', sans-serif
+
+#content h1,
+#content h2
+  letter-spacing: 1.5pt
+  text-transform: none
+  text-align: right
+  margin-right: 0.3em
+  padding-right: 0.7em
+
+#content h1
+  font-size: 2.8em
+  line-height: 1em
+  text-transform: uppercase
+  border-bottom: 1px solid $lightGray
+  margin-top: 2em
+  margin-bottom: 0.3em
+  padding-bottom: 0.3em
+
+#content h2
+  font-size: 3em
+  line-height: 1.05em
+  margin-top: 0
+  padding-top: 0.3em
+  margin-left: 0.5em
+
+/* H3 is used as the chapter header on all chapter pages
+#content h3,
+#content h4
+  // left-align or center, otherwise multi-line header might be justified with big gaps
+  text-align: left
+  letter-spacing: 1.2pt
+  text-transform: uppercase
+
+#content h3
+  font-size: 2em
+  margin-bottom: 2em
+  margin-left: 1.5em
+  border-bottom: 1px solid $lightGray
+
+#content h4
+  font-size: 1.5em
+  font-weight: 300
+
+h5, h6
+  font-weight: bold
+  text-transform: none
+
+/* The chapter headings contain two spans with these classes:
+ * chapter-name (always contains the word "Chapter") and
+ * chapter-number (as a roman numeral)
+
+// #content h3 .chapter-name
+
+#content h3 .chapter-number
+  font-size: 0.8em
+  letter-spacing: 0.1em
+
+/* Epigraphs at the beginning of each chapter are in blockquotes
+#content blockquote
+  margin-left: 4em
+  margin-right: 1em
+  font-size: 0.9em
+  font-style: italic
+  p
+    text-indent: 0
+    padding-top: 0
+    margin-top: 2pt
+
+/* The attribution of the blockquote is a span
+span.attribution,
+p.attribution
+  display: block
+  text-align: right
+  font-size: 0.8em
+
+/* ...which also contains an attribution-name, wrapping the name of
+ * the person who made the quotation
+span.attribution-name,
+p.attribution-name
+  text-align: right
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  font-style: normal
+
+/* Outside of the content area you can address the style of the
+ * running book and author headings.
+#content-title
+  text-align: right
+  font-size: 0.8em
+
+// #content-title .title
+
+// #content-title .author
+
+p
+  text-indent: 1.7em
+  margin-top: 2pt
+  padding-top: 0
+  text-align: justify
+
+/* The first paragraph in the work has a class called "noindent" which
+ * suppresses any paragraph indentation applied by default, but you
+ * can override this.
+p.first,
+p.noindent
+  text-indent: 0
+  //&:first-line
+  //  font-variant: small-caps
+  //  font-size: 1.1em
+  //  letter-spacing: .15em
+
+/* The first letter of the text is wrapped in a span with
+ * the class 'firstletter', which can be used for dropcaps.
+
+// span.firstletter
+
+/* Middlemarch contains a number of letters, which can be styled
+ * differently.
+#content p.letter
+  padding-left: 1.5em
+  padding-right: 0.5em
+
+/* Found in a letter
+#content p.salutation
+  display: block
+  font-variant: small-caps
+
+#content p.closing
+  display: block
+  text-indent: 1em
+
+pre
+  margin-top: 1em
+  margin-bottom: 1em
+
